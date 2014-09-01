@@ -3,13 +3,13 @@ __author__ = 'tchilabalo'
 from numbers import Number
 from numpy import*
 
-def parallelogram_area(length,width):
+def parallelogram_area(base,heigth):
     """
     calculating the area of a parallelogram
-    @length and width must have the same units
-    @return: the area(unit^2 from length)
+    @base and heigth must have the same units
+    @return: the area(unit^2 from heigth)
     """
-    return length*width
+    return base*heigth/2
 print("parallelogram area is",parallelogram_area(5,9))
 
 def circle_perimeter(diameter):
@@ -90,7 +90,7 @@ def rectangle_perimeter(width,length):
     @return:the perimeter(same unit as width)
     """
     return 2*(width*length)
-print("a cylinder volume is",rectangle_perimeter(2,5))
+print("a rectangle perimeter is",rectangle_perimeter(2,5))
 
 
 
